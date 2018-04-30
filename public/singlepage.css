@@ -1,0 +1,47 @@
+body{
+	background-color:#ededed;
+	padding:0px;
+	margin: 0px;
+}
+
+nav{
+	background-color:#ea6d20;
+	height:70px;
+	width:100%;
+	position: fixed;
+	top:0px;
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 18px;
+	color:#ffffff;
+	padding:24px 18px;
+	display: inline-block;
+}
+
+.inner{
+ 	width:1040px;
+ 	margin:0px auto;	
+}
+
+#two{background-color:#cccccc;}
+
+section{
+	height:1000px;
+	font-size:100px;
+	padding-top:70px;
+	margin-top:-70px;
+}
+
+.lower{
+	margin-top:70px;
+}
+
+.active{
+	background-color:#0000ff;
+}
+
+
+
+

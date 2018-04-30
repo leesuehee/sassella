@@ -1,0 +1,442 @@
+<html>
+<head>
+    <title> Coachella w/ Sass </title>
+    <link rel = 'stylesheet' type ='text/css' href = 'style.css'/>
+    <!--sliders-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="slider.js"></script>  
+    <script src='singlepage.js'></script>
+
+    <style type="text/css"> 
+    	.art{filter: alpha(opacity=100);}
+    	.imgtext{
+    		width:500px;
+    		height:190px;
+    		color:#fff;
+    		opacity:0;
+    	}
+    	.imgline{
+    		width:390px;
+    		height:5px;
+    		background:	#DAA520;
+    		opacity:0;
+    	}
+    	.artcover{
+    		width:500px;
+    		height:320px;
+    		background:#ff1a8c;
+    		opacity:0;
+    	}
+    	.lefth, .righth{
+		    width:50px;
+		    height:85px;
+		    background:#ff1a8c;
+		    z-index: 101;
+		    opacity:0;
+		}
+    	.art:hover .imgtext
+    	{ opacity: 1;}
+    	.art:hover .imgline
+    	{ opacity: 1;}
+    	.art:hover .artcover
+    	{ opacity:0.5;}
+
+    	.colorswitch{
+    		width:88px;
+    		height:23px;
+    		opacity:1px; 
+    	}
+    	.left:hover .lefth
+    	{opacity:.7;}
+    	.right:hover .righth
+    	{opacity:.7;}
+    </style>
+</head>
+<body>
+	<nav>
+		<div class = 'inner'>
+		<a href ='#one'> headliners </a>
+		<a href ='#two'> passes </a>
+		<a href ='#three'> experience </a>
+		<a href ='#four'> travel </a>
+		<a href ='#five'> full lineup </a>
+		</div><!--end inner-->
+	</nav>
+	<div class = 'lower'>
+	<section id = 'one'>
+	<!--<img src = 'images/bg1.jpg'/>-->	
+		<div class = 'inner'>
+			<div class = "slidebinder" >
+			<div class = 'left'> 	
+				<img src = 'images/left_arrow.png'/>
+				<div class='lefth'></div>
+			</div>
+			<div class = 'right'>
+				<img src = 'images/right_arrow.png'/>
+				<div class='righth'></div>
+			</div>
+				<div class ="sliderbox">
+					<div class='slide'>  
+						<div class = 'perform'>
+							<img src='images/panel1_radiohead.png'/>
+						<div class = 'headliner'> RADIO HEAD </div>
+						<div class = 'line radio'></div>
+						</div>
+
+						<div class = 'perform'>
+							<img src='images/panel1_xx.png'/>
+							<div class ='topright'> THE XX</div>
+							<div class = 'line2 xx'></div>
+						</div>
+
+						<div class = 'perform'>
+							<img src='images/panel1_travis.png'/>
+							<div class = 'abovehead'>TRAVIS</div>
+							<div class = 'underhead'>SCOTT</div>
+							<div class = 'line travis'></div>
+						</div>
+						<div class = 'stopfloat'></div>
+						</div>
+
+					<div class='slide'> 
+						<div class = 'perform'>
+							<img src = "images/panel2_gaga.png"/>
+							<div class = 'headliner'>LADY GAGA </div>
+							<div class = 'line gaga'> </div>
+						</div>
+
+						<div class = 'perform'>
+							<img src ='images/panel2_bon.png'/>
+							<div class = 'topright'>BON IVER</div>
+							<div class = 'line2 bon'></div>
+						</div>
+
+						<div class = 'perform'>
+							<img src = 'images/panel2_garrix.png'/>
+							<div class = 'abovehead'>MARTIN</div>
+							<div class = 'underhead'>GARRIX</div>
+							<div class = 'line3 garrix'></div>
+						</div>	
+						<div class = 'stopfloat'></div>			
+						</div><!--2end-->
+
+					<div class='slide'>
+						<div class = 'perform'>
+							<img src = 'images/panel3_kendrick.png'/>
+							<div class = 'headliner'>KENDRICK LAMAR
+								</div>
+							<div class = 'line kendrick'></div>
+							</div>
+						<div class = 'perform'>
+							<img src = 'images/panel3_lorde.png'/>
+							<div class = 'topright'>LORDE</div>
+							<div class = 'line2 lorde'></div>
+						</div>
+						<div class = 'perform'>
+							<img src = 'images/panel3_porter.png'/>
+							<div class = 'abovehead'>PORTER</div>
+							<div class = 'underhead'>ROBINSON</div>
+							<div class = 'line3 porter'></div>
+						</div>
+						<div class = 'stopfloat'></div>
+						</div><!--fin. slide-->
+
+					<div class = 'stopfloat'></div>
+				</div> <!--end of sliderbox-->
+			</div> <!-- end slidebinder-->
+		</div><!-- end inner -->
+	</section>
+
+	<!--~~~~~~~~~~~~~~~~~~~~~end section 1~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<section id = 'two'>
+	
+		<div class ='inner'>
+		<div class = 'sec2container'>
+			<div class = 'section2title'>
+				TICKETS
+				<div class = ' orange'>& PASSES</div>
+			</div>
+							<!-- part1 -->
+			<div class = 'tix box2'>
+				<img src = 'images/tickets_ga.png'/>
+				<div class = 'tixtitle'>
+					GA PASS
+					</div>
+				<div class = 'ga sqr1'>
+					<div class = 'boxtitle'>WEEKEND 1</div>
+					<div class = 'money'>$399</div>
+				</div>
+				<div class = 'buysell1'>SOLD OUT</div>
+
+				<div class = 'ga sqr2'>
+					<div class = 'boxtitle'>WEEKEND 2</div>
+					<div class = 'money'>$399</div>
+					<div class = 'stopfloat'></div>
+				</div>
+				<div class = 'buysell2'>SOLD OUT</div>	
+			
+			</div>
+
+			<div class = 'tix box3'>
+			
+				<img src = 'images/tickets_gashuttle.png'/>
+				<div class = 'tixtitleII'>
+				GA PASS + SHUTTLE
+				</div>
+				<div class = 'gaboxa'>
+					<div class = 'boxtitle'>WEEKEND 1</div>
+					<div class = 'money'>$459</div>
+				</div>
+				<div class = 'buysella'>SOLD OUT</div>	
+
+				<div class = 'gaboxb'>
+					<div class = 'boxtitle'>WEEKEND 2</div>
+					<div class = 'money'>$459</div>
+				</div>
+				<div class = 'buysellb'>BUY NOW! </div>	
+			<div class = 'stopfloat'></div>	
+			</div>
+			
+			
+							<!--part2 -->
+			<div class = 'tix box4'>
+				<img src = 'images/tickets_camping.png'/>
+				<div class='camptitle'>CAMPING</div>
+				<div class = 'campbox'>
+					<div class = 'boxtitle'>TENT CAMPING</div>
+					<div class = 'money'>$99</div>
+				</div>
+				<div class = 'buysellcamp'>BUY NOW</div>	
+			</div>
+			
+			<div class = 'tix box5'>
+				<img src= 'images/tickets_vip.png'/>
+				<div class ='viptitle'>VIP PASSES </div>
+				<div class = 'vipbox'>
+					<div class = 'boxtitle'>FULL VIP</div>
+					<div class = 'money'>$899</div>
+				</div>
+				<div class = 'buysellvip'>BUY NOW</div>
+			</div>
+
+			<div class = 'tix box6'>
+				<img src = 'images/tickets_shuttles.png'/>
+				<div class ='shuttletitle'>SHUTTLES</div>
+				<div class = 'shuttlebox'>
+					<div class = 'boxtitle'>ALL LINES</div>
+					<div class = 'money'>$50</div>
+				</div>
+				<div class = 'buysellshuttle'>BUY NOW</div>
+			<div class = 'stopfloat'></div>
+			</div>
+		</div><!--end sec2 container-->
+		</div><!-- end inner -->
+	</section>
+	<!--~~~~~~~~~~~~~~~~~~~~-end of section II~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<section id = 'three'>
+	<!--<img src = 'images/bg3.jpg'/>-->
+		<div class = 'inner'>
+			<div class = 'expcontainer'>
+								<!--titlebox-->
+				<div class ='experience'> <span class = 'yellowart'>ART</span> PLAYS A PIVOTAL ROLE IN DEFINING THE COACHELLA EXPERIENCE.
+				</div>
+								<!--artist box-->
+				<div class = 'artists'> 2017 FEATURED ARTISTS 
+				</div>
+			</div><!--end exp container-->
+							<!--images-->
+			<div class = 'artbox'>
+
+				<div class = 'art img1'>
+					<img src = 'images/art1.png'/>
+					<div class = ' imgtext'>
+					VIEW ARTIST BIO</div>
+					<div class = 'artcover'></div>
+					<div class = 'imgline'></div>
+				</div>
+
+				<div class = 'art img2'>
+					<img src = 'images/art2.png'/>
+					<div class = ' imgtext'>
+					VIEW ARTIST BIO</div>
+					<div class = 'artcover'></div>
+					<div class = 'imgline'></div>
+				</div>
+
+				<div class = 'art img3'>
+					<img src = 'images/art3.png'/>
+					<div class = ' imgtext'>
+					VIEW ARTIST BIO</div>
+					<div class = 'artcover'></div>
+					<div class = 'imgline'></div>
+				</div>
+
+				<div class = 'art img4'>
+					<img src = 'images/art4.png'/>
+					<div class = ' imgtext'>
+					VIEW ARTIST BIO</div>
+					<div class = 'artcover'></div>
+					<div class = 'imgline'></div>
+				</div>
+
+				<div class = 'art img5'>
+					<img src = 'images/art5.png'/>
+					<div class = ' imgtext'>
+					VIEW ARTIST BIO</div>
+					<div class = 'artcover'></div>
+					<div class = 'imgline'></div>
+				</div>
+
+				<div class = 'art img6'>
+					<img src = 'images/art6.png'/>
+					<div class = ' imgtext'>
+					VIEW ARTIST BIO</div>
+					<div class = 'artcover'></div>
+					<div class = 'imgline'></div>
+				</div>
+				<div class = 'stopfloat'></div>
+				
+			</div><!--end art box-->
+		</div><!--end inner -->
+	</section>
+	<!--~~~~~~~~~~~~~~~~~~~~-end of section III~~~~~~~~~~~~~~~~~~~~~-->
+	
+	<section id = 'four'>
+		<div class = 'inner'>
+		<div class ='travelbox'>
+			<div class = 'traveltitle'> TRAVELING </div>
+			<span class='tochella'> TO COACHELLA </span></div>
+			<img src = 'images/travel_map.png'/>
+		<div class = 'citybox'>
+			<div class = 'city sf'>LEAVING 
+			<span class = 'init'>SF</span></div>
+			5 SOUTH of 101 EAST > exit at JEFFERSON ST. or MONROE ST. >travel SOUTH 
+		</div> <!--end citybox-->
+		<div class = 'citybox'>
+			<div class = 'city la'>LEAVING 
+			<span class = 'init'>LA</span></div>
+			10 EAST > exit at JEFFERSON ST. or MONROE ST.>travel SOUTH 
+		</div>
+
+		<div class = 'citybox'>
+			<div class = 'city lv'>LEAVING 
+			<span class = 'init'>LV</span></div>
+			15 SOUTH > 10 EAST > exit at JEFFERSON ST. or MONROE ST. >travel SOUTH 
+		</div>
+
+		<div class = 'citybox'>
+			<div class = 'city sd'>LEAVING 
+			<span class = 'init'>SD</span></div>
+			15 NORTH > 215 NORTH > 60 EAST > 10 EAST > exit at JEFFERSON ST. or MONROE ST. >travel SOUTH 
+		</div>
+
+		<div class = 'citybox'>
+			<div class = 'city az'>LEAVING 
+			<span class = 'init'>AZ</span></div>
+			10 WEST > exit at JACKSON ST.> LEFT at stop sign > follow signs to lots 
+		</div>
+		
+		<div class = 'citybox'>
+			<div class = 'city idk'>LEAVING 
+			<span class = 'init question'>?? </span></div>
+			Looking for more ways to get to the festival?
+			<div class = 'tinytravel'>
+				<div class = 'init itravel'> TRAVEL </div>
+				<div class = 'init itravel2'>PACKAGES</div>
+			</div>
+		</div>
+		<div class = "stopfloat"></div>
+
+		</div><!--end citybox -->
+		</div><!--end inner-->	
+	</section>
+	<!--~~~~~~~~~~~~~~~~~~~~-end of section IV~~~~~~~~~~~~~~~~~~~~~~-->
+
+	<section id = 'five'>
+		<div class = 'inner'>
+		<span class = 'triline'>___________________________</span>
+		<span class = 'triline un2'>___________________________</span>
+		<span class = 'triline un3'>___________________________</span>
+		<div class = 'lineuphead'> 2017 LINE UP  </div>
+		<span class = 'triline2 double'>___________________________</span>
+		<span class = 'triline2 double2'>___________________________</span>
+		<span class = 'triline2 double3'>___________________________</span>
+
+		<div class = 'box day1'>
+			<span class = 'head'> APRIL 14TH</span>
+			<span class = 'head bot'>& 21ST </span>
+			<div class = 'lineuplist'>
+			<p>RADIOHEAD</p>
+			<p>THE XX</p>
+			<p>TRAVIS SCOTT </p>
+			<p>FATHER JOHN MISTY</p>
+			<p>EMPIRE OF THE SUN</p>
+			<p>DILLON FRANCIS</p>
+			</div>
+			<div class = 'viewer d1'> VIEW ALL </div>
+		</div><!--end box day1 -->
+
+		<div class = 'box day2'>
+			<span class = 'head'> APRIL 15TH </span>
+			<span class = 'head bot'>& 22ST </span>
+			<div class = 'lineuplist'>
+			<p>LADY GAGA</p>
+			<p>BON IVER</p>
+			<p>FUTURE </p>
+			<p>DJ SNAKE</p>
+			<p>MARTIN GARRIX</p>
+			<p>SCHOOLBOY Q</p>
+			</div>
+			<div class = 'viewer d2'> VIEW ALL </div>
+		</div><!--end box day2 -->
+
+		<div class = 'box day3'>
+			<span class = 'head'> APRIL 17TH </span>
+			<span class = 'head bot'>& 23TH </span>
+			<div class = 'lineuplist'>
+			<p>KENDRICK LAMAR</p>
+			<p>LORDE</p>
+			<p>PORTER ROBINSON</p>
+			<p>FUTURE ISLANDS</p>
+			<p>HANS ZIMMER</p>
+			<p>DJ KHALED</p>
+			</div>
+			<div class = 'viewer d3'> VIEW ALL </div>
+		<div class = 'stopfloat'></div>
+		</div><!--end box day3 -->
+		<div class = 'inner'>
+
+	</section>
+		<div class = 'ender'>
+
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+  			if (d.getElementById(id)) return;
+ 			js = d.createElement(s); js.id = id;
+ 			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+ 			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+			<div class="fb-like" 
+			data-href="https://developers.facebook.com/docs/plugins/" 
+			data-width="120px" 
+			data-layout="box_count" 
+			data-action="like" 
+			data-size="large" 
+			data-show-faces="true" 
+			data-share="true">
+				
+			</div>
+			<div class ='endline'> ________________________________________________________________________________________________________________________________</div>
+			<div class = 'endtitle'> &copy; 2017 COACHELLA VALLEY MUSIC & ARTS FESTIVAL </div>
+
+
+		</div><!--end ender-->
+		</div><!-- inner end -->	
+	<!--~~~~~~~~~~~~~~~~~~~~-end of section V~~~~~~~~~~~~~~~~~~~~~~~-->
+</body>
+</html>
